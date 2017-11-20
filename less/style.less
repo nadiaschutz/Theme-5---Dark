@@ -1,0 +1,65 @@
+@import "da-footer.less";
+@import "da-header.less";
+
+.theme-font {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    .theme-font;
+    -webkit-transition: all 400ms ease;
+    -moz-transition: all 400ms ease;
+    -ms-transition: all 400ms ease;
+    -o-transition: all 400ms ease;
+    transition: all 400ms ease;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+.content {
+    min-height: 1000px;
+    background-color: #FFFFFF;
+}
+
+.content-block {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    /* overflow: hidden;*/
+}
+
+.column {
+    float: left;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /*overflow: hidden;*/
+}
+
+.button {
+    border: 2px solid white;
+    white-space: nowrap;
+    display: inline-block;
+    letter-spacing: .025em;
+    text-decoration: none;
+    background: transparent;
+    color: white;
+}
+
+@media screen and (max-width: 1169px) {
+    .content-block {
+        width: 100%;
+    }
+}

@@ -1,0 +1,99 @@
+.footer {
+  height: 400px;
+  color: white;
+  font-size: 14px;
+  line-height: 19px;
+}
+.footer-first-column {
+  width: 35%;
+}
+.footer-first-column__copyrights {
+  margin-top: 40px;
+}
+.footer-second-column {
+  width: 65%;
+}
+.footer__theme-5-dark {
+  background: #0d3136;
+}
+.footer-content {
+  padding-top: 100px;
+  height: 400px;
+}
+.subfooter {
+  height: 100px;
+  background-color: #000000;
+}
+.subfooter .subfooter-links {
+  width: 65%;
+}
+.subfooter .subfooter-links-list {
+  padding-top: 35px;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.subfooter .subfooter-links-list-item {
+  display: inline-block;
+  font-size: 20px;
+}
+.subfooter .subfooter-links-list-item a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0 10px;
+  text-decoration: none;
+  letter-spacing: 1.1px;
+}
+.subfooter-to-top {
+  width: 35%;
+}
+.subfooter-to-top .button__to-top {
+  margin-top: 23px;
+  padding: 12px 35px;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  float: right;
+  letter-spacing: 3.5px;
+}
+.subfooter-to-top .button__to-top i {
+  padding-right: 15px;
+  font-size: 15px;
+}
+@media screen and (max-width: 869px) {
+  .footer {
+    text-align: center;
+    height: auto;
+  }
+  .footer .footer-first-column,
+  .footer .footer-second-column,
+  .footer .subfooter-links,
+  .footer .subfooter-to-top {
+    width: 100%;
+  }
+  .footer .footer-content {
+    padding: 50px 0;
+    height: auto;
+  }
+  .footer .subfooter {
+    height: auto;
+  }
+  .footer .subfooter .subfooter-links-list {
+    padding-top: 21px;
+  }
+  .footer .subfooter .subfooter-to-top {
+    text-align: center;
+  }
+  .footer .subfooter .subfooter-to-top .button {
+    float: none;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .subfooter-links-list-item:first-child {
+    display: none;
+  }
+}
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
