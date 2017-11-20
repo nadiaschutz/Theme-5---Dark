@@ -1,12 +1,9 @@
 @theme5-dark__header: #031E19; //header-menu backgorund
 @theme5-dark__header-submenu: #0D3C33; //header-submenu
 @theme5-dark__header-submenu-active: #0A820C;
-
 @theme5-dark__header-submenu-active: #0A820C;
-
 @theme5-dark__menu-active: #5ABB5C; //active menu list highlight
 @fontSize_g: 14px;
-
 .menuItem {
     color: white;
     text-decoration: none;
@@ -16,7 +13,6 @@
     padding-bottom: 32px;
     .theme-font;
 }
-
 
 
 /*NAVIGATION*/
@@ -30,7 +26,6 @@
     .content-block {
         height: 100%;
     }
-
     &__header {
         float: left;
         padding-top: 20px;
@@ -47,14 +42,14 @@
             a {
                 .menuItem;
             }
-            &:hover > a,
-            &:active > a {
+            &:hover>a,
+            &:active>a {
                 border-bottom: 10px solid @theme5-dark__menu-active;
                 color: @theme5-dark__menu-active;
             }
             &:nth-child(3) {
-                &:hover > a,
-                &:active > a {
+                &:hover>a,
+                &:active>a {
                     border-bottom: none;
                     color: white;
                 }
@@ -62,7 +57,7 @@
                 &:active {
                     background: @theme5-dark__header-submenu;
                 }
-                &:hover > ul {
+                &:hover>ul {
                     display: block;
                 }
             }
@@ -93,12 +88,11 @@
                         padding-bottom: 15px;
                         border-bottom: 1px @theme5-dark__menu-active solid;
                     }
-
                     .submenu-items--item {
                         padding-top: 15px;
                         padding-bottom: 15px;
-                        &:hover > a,
-                        &:active > a {
+                        &:hover>a,
+                        &:active>a {
                             color: #fff;
                             border-bottom: none;
                         }
@@ -108,13 +102,9 @@
                         }
                     }
                 }
-
             }
-
         }
-
     }
-
 }
 
 
@@ -124,9 +114,7 @@
     /*position: relative;*/
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.4)),
-    url("../images/theme5-dark.png");
+    background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/theme5-dark.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -166,11 +154,8 @@
                 font-size: 21px;
                 font-weight: 300;
             }
-
         }
-
     }
-
 }
 
 .mobile-menu {
@@ -182,6 +167,7 @@
     }
 }
 
+
 /*.feature_overlay {
     position: absolute;
     top: 0;
@@ -191,6 +177,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }*/
+
 
 /*RESPONSIVE*/
 
@@ -209,10 +196,9 @@
     }
 }
 
-
 @media screen and (max-width: 920px) {
     .navbar ul.navbar__menu {
-        display: inline-grid;
+        display: block;
         background: @theme5-dark__header;
         width: 230px;
         height: 100%;
@@ -225,16 +211,20 @@
         -o-transition: all 400ms ease;
         transition: all 400ms ease;
         li.menu-item {
-            text-align: center;
+            line-height: 70px;
+            float: none;
             display: block;
-            border-bottom: 1px solid #353535;
+            text-align: center;
             a {
-                float: left;
+                padding-bottom: 0;
             }
-            &:hover > a,
-            &:active > a {
+            &:hover>a,
+            &:active>a {
                 color: #fff;
                 border-bottom: none;
+            }
+            &:hover>ul {
+                position: static;
             }
             &:hover,
             &:active {
@@ -243,13 +233,16 @@
             .navbar__submenu {
                 left: 0;
                 top: 133px;
+                width: 100%;
+                height: auto;
+                .submenu {
+                    .submenu__column {
+                        width: 100%;
+                    }
+                }
             }
-
-
         }
-
     }
-
     .navbar a.mobile-menu {
         display: block;
         line-height: 60px;
@@ -262,9 +255,6 @@
             }
         }
     }
-
-
-
     body.nav-open {
         margin-left: -230px;
         margin-right: 230px;
@@ -283,18 +273,12 @@
             width: 100%;
         }
     }
-
-
-
     .mobile-menu-hide {
         display: none;
     }
-
     .home-section-left {
-
         h1 {
             font-size: 54px;
         }
     }
-
 }

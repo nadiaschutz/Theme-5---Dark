@@ -50,6 +50,10 @@ $(document).ready(function () {
     $(".iphone-btn").delay(300).animate({
         top: "+=-3"
     }, 100);
+
+    /*ACCORDION ON TAP*/
+
+
 });
 
 
